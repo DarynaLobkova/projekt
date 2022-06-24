@@ -21,6 +21,14 @@ body{
     font-family: var(--main-font);
     color:var(--primary-text-color);
 }
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .button{
     cursor: pointer;
 }
@@ -28,6 +36,8 @@ body{
     text-decoration: none;
 }
 .list{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 /* Header */
@@ -65,16 +75,23 @@ body{
 }
 
 /* Hero */
+.hero{
+    text-align: center;
+    margin-bottom: 94px;
+}
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     /* color: var(--title-dark-theme-color); */
 }
 .hero-button{
+  display: inline-block;
+  min-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -82,25 +99,39 @@ body{
   letter-spacing: 0.06em;
   color: var(--title-dark-theme-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
-/* Advantage */
-.advantage-subtitle{
+/* Our nations */
+.our-nations{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.our-naions-subtitle{
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14px;
    letter-spacing: 0.03em;
-   text-transform: uppercase;
    color: var(--title-light-theme-color);
+   margin-bottom: 10px;
+   margin-top: 0;
 }
 .description{
     font-size: 14px;
     line-height: 1.71px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-top: 0;
 }
-
+.our-nations-list{
+    display: inline-block;
+}
 /* What we do */
+.what-we-do{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .title{
     font-weight: 700;
     font-size: 36px;
@@ -119,6 +150,15 @@ body{
     /* color: var(--title-dark-theme-color); */
 }
 /* Our team */
+.our-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #F5F4FA;
+}
+.our-team-subtitle{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
 .our-team-subtitle,
 .our-team-text{
     font-weight: 500;
@@ -127,12 +167,17 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-light-theme-color);
+
 }
 .our-team-text{
     font-weight: 400;
     color: var(--primary-text-color);
 }
-
+/* Clients */
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* Portfolio */
 .filtr-button{
     font-weight: 500;
