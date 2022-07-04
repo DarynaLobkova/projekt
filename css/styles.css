@@ -52,9 +52,35 @@ body{
 .logo-name-part{
     color: var(--accent-color);
 }
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.navigation-list {
+    display: flex;
+    margin-left: 85px;
+}
+
+.contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.navigation-item:not(:last-child),
+.contact-item:not(:last-child){
+    margin-right: 50px;
+}
+
 .navigation-link,
 .contact-mail-link,
 .contact-tel-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -77,7 +103,8 @@ body{
 /* Hero */
 .hero{
     text-align: center;
-    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title{
     margin-top: 0;
