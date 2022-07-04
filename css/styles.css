@@ -133,12 +133,12 @@ body{
 /* Our nations */
 .our-nations{
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 47px;
 }
 .our-naions-subtitle{
    font-weight: 700;
    font-size: 14px;
-   line-height: 1.14px;
+   line-height: 1.14;
    letter-spacing: 0.03em;
    color: var(--title-light-theme-color);
    margin-bottom: 10px;
@@ -146,26 +146,40 @@ body{
 }
 .description{
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-top: 0;
+    margin-bottom: 0;
 }
 .our-nations-list{
-    display: inline-block;
+    display: flex;
 }
+.our-nations-item:not(:last-child){
+    margin-right: 30px;
+}
+
+
 /* What we do */
 .what-we-do{
-    padding-top: 94px;
+    display: flex;
+    padding-top: 47px;
     padding-bottom: 94px;
 }
 .title{
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17px;
     text-align: center;
     letter-spacing: 0.03em;
-     color: var(--title-light-theme-color);
+    color: var(--title-light-theme-color);
+}
+.what-we-do-list{
+    display: flex;
+}
+.what-we-do-item:not(:last-child){
+    margin-right: 30px;
 }
 .what-we-do-text{
     font-weight: 700;
@@ -178,9 +192,16 @@ body{
 }
 /* Our team */
 .our-team{
+    display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
     background: #F5F4FA;
+}
+.our-team-list{
+    display: flex;
+}
+.our-team-item:not(:last-child){
+    margin-right: 30px;
 }
 .our-team-subtitle{
     margin-bottom: 10px;
@@ -205,8 +226,23 @@ body{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+
 /* Portfolio */
 
+.filtr-section{
+    padding-top: 93px;
+    padding-bottom: 50px;
+}
+
+.filtr-list{
+    display: flex;
+}
+
+.filtr-item:not(:last-child){
+    margin-right: 8px;
+}
+ 
 .filtr-button{
     font-weight: 500;
     font-size: 16px;
