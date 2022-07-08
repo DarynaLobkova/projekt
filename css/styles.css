@@ -22,7 +22,7 @@ body{
     color:var(--primary-text-color);
 }
 .container{
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -195,7 +195,7 @@ body{
     display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
-    background: #F5F4FA;
+    background-color: #F5F4FA;
 }
 .our-team-list{
     display: flex;
