@@ -133,7 +133,7 @@ body{
 /* Our nations */
 .our-nations{
     padding-top: 94px;
-    padding-bottom: 47px;
+    padding-bottom: 94px;
 }
 .our-naions-subtitle{
    font-weight: 700;
@@ -163,7 +163,7 @@ body{
 /* What we do */
 .what-we-do{
     display: flex;
-    padding-top: 47px;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .title{
@@ -225,6 +225,27 @@ body{
 .clients{
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.clients-list{
+    display: flex;
+}
+
+.clients-link{
+    display: flex;
+    weight: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+/* Footer */
+.logo-footer{
+    color: #FFFFFF;
+}
+.footer-page{
+    background-color: #2F303A;
 }
 
 
