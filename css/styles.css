@@ -159,6 +159,10 @@ body{
     margin-right: 30px;
 }
 
+.our-nation-pic{
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
 
 /* What we do */
 .what-we-do{
@@ -229,10 +233,17 @@ body{
 .clients-list{
     display: flex;
 }
+.clients-item{
+    display: flex;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .clients-link{
     display: flex;
-    weight: 170px;
+    width: 170px;
     height: 90px;
     justify-content: center;
     align-items: center;
@@ -240,24 +251,81 @@ body{
     border-radius: 4px;
 }
 
+
 /* Footer */
-.logo-footer{
-    color: #FFFFFF;
-}
-.footer-page{
+.footer-page {
     background-color: #2F303A;
 }
+.footer-page > .container{
+    display: flex;
+    padding-top: 60px;
+    align-items: baseline;
+    padding-bottom: 60px;
+}
+.footer-addres{
+    margin-right: 147px;
+}
+
+.footer-logo{
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.addres{
+    font-style: normal;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+}
+.addres-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.addres-link{
+    color: #FFFFFF;
+}
+
+.contact-mail-link-footer,
+.contact-tel-link-footer{
+    color:rgba(255, 255, 255, 0.6);
+}
+
+
+.join{
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.logo-accent-footer{
+    color: #FFFFFF;
+}
+
+
 
 
 /* Portfolio */
 
 .filtr-section{
     padding-top: 93px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 .filtr-list{
     display: flex;
+    justify-content: center;
 }
 
 .filtr-item:not(:last-child){
@@ -265,11 +333,15 @@ body{
 }
  
 .filtr-button{
+    width: 130px;
+    height: 38px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.39;
     text-align: center;
     letter-spacing: 0.03em;
+    border: none;
+    background-color: #F5F4FA;
     color: var(--title-light-theme-color);
 }
 .filtr-button:hover,
@@ -279,6 +351,11 @@ body{
 }
 
 /* Our-works */
+
+.our-works > .container{
+    padding-top: 25px;
+    padding-bottom: 94px;
+}
 
 .our-works-title{
     font-weight: 700;
