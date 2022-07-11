@@ -28,6 +28,10 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .button{
     cursor: pointer;
@@ -40,9 +44,15 @@ body{
     margin: 0;
     list-style: none;
 }
+.img{
+    display: block;
+}
 
 
 /* Header */
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 .logo{
     font-family: 'Raleway';
     font-weight: 700;
@@ -133,10 +143,7 @@ body{
 }
 
 /* Our nations */
-.our-nations{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .our-naions-subtitle{
    font-weight: 700;
    font-size: 14px;
@@ -162,7 +169,6 @@ body{
 }
 
 .our-nation-pic{
-    display: block;
     margin-bottom: 30px;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -171,8 +177,6 @@ body{
 /* What we do */
 .what-we-do{
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 .title{
     margin-bottom: 50px;
@@ -201,8 +205,6 @@ body{
 /* Our team */
 .our-team{
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: #F5F4FA;
 }
 .our-team-list{
@@ -230,10 +232,7 @@ body{
     color: var(--primary-text-color);
 }
 /* Clients */
-.clients{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .clients-list{
     display: flex;
 }
@@ -333,14 +332,11 @@ body{
 
 /* Portfolio */
 
-.filtr-section{
-    padding-top: 93px;
-    padding-bottom: 25px;
-}
 
 .filtr-list{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .filtr-item:not(:last-child){
@@ -366,11 +362,6 @@ body{
 }
 
 /* Our-works */
-
-.our-works > .container{
-    padding-top: 25px;
-    padding-bottom: 94px;
-}
 
 .our-works-title{
     margin-top: 0;
