@@ -117,7 +117,20 @@ body{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #212121;;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)),
+        url(../images/hero-img.jpg);
 }
+   
+
 .hero-title{
     margin-top: 0;
     margin-bottom: 30px;
@@ -126,7 +139,7 @@ body{
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /* color: var(--title-dark-theme-color); */
+    color: var(--title-dark-theme-color);
 }
 .hero-button{
   display: inline-block;
@@ -167,6 +180,29 @@ body{
 }
 .our-nations-item:not(:last-child){
     margin-right: 30px;
+}
+
+.our-nations-item::before{
+    display: block;
+    content:"";
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+}
+.icon-antena::before{
+  background-image: url(../images/images-bckgr/our-nations-antena.svg);
+}
+.icon-clocks::before{
+  background-image: url(../images/images-bckgr/our-nations-clock.svg);
+}
+.icon-diagram::before{
+    background-image: url(../images/images-bckgr/our-nations-diagram.svg);
+}
+.icon-astronaut::before{
+    background-image: url(../images/images-bckgr/our-nations-astronaut.svg);
 }
 
 .our-nation-pic{
@@ -216,6 +252,14 @@ body{
 .our-team-list{
     display: flex;
 }
+.our-team-item{
+    width: 270px;
+    height: 422px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .our-team-item:not(:last-child){
     margin-right: 30px;
 }
@@ -307,11 +351,47 @@ body{
 .contact-tel-link-footer{
     color:rgba(255, 255, 255, 0.6);
 }
+
 .contact-mail-link-footer:hover,
 .contact-mail-link-footer:focus,
 .contact-tel-link-footer:hover,
-.contact-tel-link-footer:focus{
+.contact-tel-link-footer:focus,
+.addres-link:hover,
+.addres-link:focus{
     color: var(--accent-color);
+}
+.social-icon-list{
+    display: flex;
+}
+.social-item:not(:last-child){
+    margin-right: 10px;
+}
+.social-link:hover,
+.social-link:focus{
+    background-color: #2196F3;
+}
+
+.social-link{
+    content: "";
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.inst{
+    background-image: url(../images/instagram-icon.svg);
+}
+.twit{
+    background-image: url(../images/twitter-icon.svg);
+}
+.fc{
+    background-image: url(../images/facebook-icon.svg);
+}
+.ld{
+    background-image: url(../images/linkedin-icon.svg);
 }
    
 .footer-join{
@@ -338,6 +418,32 @@ body{
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
+
+.button-sb{
+    display: inline-flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+}
+.button-sb::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../images/icon-btn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
 
 
 
@@ -366,11 +472,14 @@ body{
     border: none;
     background-color: #F5F4FA;
     color: var(--title-light-theme-color);
+    padding: 6px 22px;
 }
 .filtr-button:hover,
 .filtr-button:focus{
     color: var(--title-dark-theme-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 /* Our-works */
@@ -405,6 +514,11 @@ body{
     display:flex;
     flex-wrap: wrap;
 }
+
+.our-works-item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .our-works-link{
     display: block;
 }
