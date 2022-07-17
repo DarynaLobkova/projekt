@@ -79,6 +79,8 @@ body{
 
 .contact-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
 }
 
@@ -109,8 +111,32 @@ body{
 }
 .contact-mail-link,
 .contact-tel-link{
-     color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
 }
+
+
+
+.icon-mail{
+    width: 16px;
+    height: 11.2px;
+}
+.icon-phone{
+    width: 10px;
+    height: 14.94px;
+}
+.contact-icon-svg{
+    margin-right: 10px;
+    fill: #757575;
+}
+.contact-mail-link:hover .contact-icon-svg,
+.contact-tel-link:hover .contact-icon-svg,
+.contact-mail-link:focus .contact-icon-svg,
+.contact-tel-link:focus .contact-icon-svg{
+    fill: #2196F3;
+}
+
 
 /* Hero */
 .hero{
@@ -182,40 +208,20 @@ body{
     margin-right: 30px;
 }
 
-.our-nations-item::before{
-    display: block;
-    content:"";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-}
-.icon-antena::before{
-  background-image: url(../images/images-bckgr/our-nations-antena.svg);
-}
-.icon-clocks::before{
-  background-image: url(../images/images-bckgr/our-nations-clock.svg);
-}
-.icon-diagram::before{
-    background-image: url(../images/images-bckgr/our-nations-diagram.svg);
-}
-.icon-astronaut::before{
-    background-image: url(../images/images-bckgr/our-nations-astronaut.svg);
-}
-
-.our-nation-pic{
+.our-nation-icon{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
     background-color: #F5F4FA;
-    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
+.our-nation-icon-svg{
+    width: 70px;
+    height: 70px;
+}
 /* What we do */
 .what-we-do{
     display: flex;
@@ -304,15 +310,18 @@ body{
     border-radius: 50%;
 }
 
-.social-icon-link:hover {
+.social-icon-link:hover{
     background-color: var(--accent-color);
 }
 
-
+.social-icon-link:hover .social-icon-svg{
+    fill: #FFFFFF;
+}
 
 .social-icon-svg{
     width: 20px;
     height: 20px;
+    fill: #AFB1B8;
 }
 
 /* Clients */
@@ -337,7 +346,12 @@ body{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-
+.clients-icon{
+    fill: #afb1b8;
+}
+.clients-link:hover .clients-icon{
+    fill: var(--accent-color);
+}
 
 
 /* Footer */
@@ -442,7 +456,9 @@ body{
     letter-spacing: 0.06em;
     border-radius: 4px;
 }
-
+.icon-send{
+    margin-left: 10px;
+}
 
 
 
