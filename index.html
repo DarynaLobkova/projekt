@@ -47,7 +47,15 @@
         <!-- Hero -->
         <section class="hero">
             <h1 class="hero-title">Effective solutions<br>for your business</h1>
-            <button class="hero-button button" type="button">Order service</button>
+            <button data-modal-open class="hero-button button" type="button">Order service</button>
+            <div data-modal class="backdrop is-hidden">
+                <div class="modal">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio id culpa explicabo atque nostrum laborum
+                        saepe assumenda delectus reiciendis aut voluptate facere sapiente, aliquam et quo cupiditate sint amet eos.
+                    </p>
+                    <button data-modal-close>Close</button>
+                </div>
+            </div>
         </section>
         <!-- Our nations-->
         <section class="our-nations section">
@@ -361,6 +369,7 @@
             </div>
            </div>
     </footer>
+
     <script src="./js/modal.js"></script>
 </body>
 </html>
