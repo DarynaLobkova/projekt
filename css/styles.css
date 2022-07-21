@@ -241,15 +241,34 @@ body{
 .what-we-do-item:not(:last-child){
     margin-right: 30px;
 }
+
+.what-we-do-thumb{
+    position: relative;
+}
+
+/* .what-we-do-desc{
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%);
+} */
+
 .what-we-do-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    /* color: var(--title-dark-theme-color); */
+    color: var(--title-dark-theme-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  
 }
+
 /* Our team */
 .our-team{
     display: flex;
@@ -409,10 +428,15 @@ body{
     color: var(--accent-color);
 }
 
+.social-icon-svg-footer{
+    fill: #FFFFFF;
+}
+
 .footer-social-icon{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
+
 
 
 
