@@ -196,6 +196,8 @@ body{
 .hero-button{
   display: inline-block;
   min-width: 200px;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -203,9 +205,13 @@ body{
   letter-spacing: 0.06em;
   color: var(--title-dark-theme-color);
   background-color: var(--accent-color);
+
   border: none;
   border-radius: 4px;
-  padding: 10px 32px;
+  cursor: pointer;
+
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 .backdrop{
@@ -222,18 +228,59 @@ body{
     pointer-events: none;
 }
 
-.modal{
+
+.contact-form{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    padding: 40px;
-
-
     width: 528px;
-    height: 581px;
+    margin: 0 auto;
     background-color: #FFFFFF;
+    padding: 40px;
+}
+
+
+.contact-form-title{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--title-light-theme-color);
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.contact-form-input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 28px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+}
+
+.contact-form-input:focus{
+    outline: none;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
+.user-comment{
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.user-comment:focus{
+    outline: none;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
 }
 
 
@@ -532,20 +579,45 @@ body{
     color: #FFFFFF;
 }
 
+.contact-form-input-footer{
+    width: 358px;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+    background-color: #2F303A;
+}
+
+.contact-form-input-footer:focus{
+    outline: none;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
 .button-sb{
     display: inline-flex;
     align-items: center;
     width: 200px;
     height: 50px;
     padding: 10px 29px;
+
     background-color: #2196F3;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
+
+    border: none;
     border-radius: 4px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
+
 .icon-send{
     margin-left: 10px;
 }

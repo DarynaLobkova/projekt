@@ -50,10 +50,20 @@
             <button data-modal-open class="hero-button button" type="button">Order service</button>
             <div data-modal class="backdrop is-hidden">
                 <div class="modal">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio id culpa explicabo atque nostrum laborum
-                        saepe assumenda delectus reiciendis aut voluptate facere sapiente, aliquam et quo cupiditate sint amet eos.
-                    </p>
-                    <button data-modal-close>Close</button>
+                    <form class="contact-form">
+                        <h2 class="contact-form-title">Leave your details, we will call you back</h2>
+                        <input type="text" class="contact-form-input" name="user-name" placeholder="Name" required>
+                        <input type="tel" class="contact-form-input" name="user-phone" placeholder="Phone" required>
+                        <input type="email" class="contact-form-input" name="user-email" placeholder="Email" required>
+                        <textarea class="user-comment" name="user-comment" placeholder="Comment" required></textarea>
+
+                        
+                        <input type="checkbox" value="agree" name="Agree" id="Agree" class="contact-form-input">
+                        <label for="Agree">I agree to the newsletter and accept with the User agreement</label>
+
+                        <button type="submit" class="hero-button">Send</button> 
+                        <button data-modal-close>Close</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -362,10 +372,14 @@
             </div>
             <div class="footer-right-part">
                 <p class="text-footer">SUBSCRIBE TO NEWSLETTER</p>
-                <a class="link button-sb" href="">Subscribe
-                    <svg class="icon-send" width="24px" height="24px">
-                        <use href="./images/sprite.svg#icon-icon-send"></use>
-                    </svg></a>
+                <form>
+                    <input type="email" class="contact-form-input-footer" name="user-email" placeholder="Email" required>
+                    <button type="submit" class="button-sb" >Subscribe
+                        <svg class="icon-send" width="24px" height="24px">
+                            <use href="./images/sprite.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form> 
             </div>
            </div>
     </footer>
