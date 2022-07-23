@@ -50,19 +50,33 @@
             <button data-modal-open class="hero-button button" type="button">Order service</button>
             <div data-modal class="backdrop is-hidden">
                 <div class="modal">
+                    <b class="contact-form-title">Leave your details, we will call you back</b>
                     <form class="contact-form">
-                        <h2 class="contact-form-title">Leave your details, we will call you back</h2>
-                        <input type="text" class="contact-form-input" name="user-name" placeholder="Name" required>
-                        <input type="tel" class="contact-form-input" name="user-phone" placeholder="Phone" required>
-                        <input type="email" class="contact-form-input" name="user-email" placeholder="Email" required>
-                        <textarea class="user-comment" name="user-comment" placeholder="Comment" required></textarea>
-
-                        
-                        <!-- <input type="checkbox" value="agree" name="Agree" id="Agree" class="contact-form-input">
-                        <label for="Agree">I agree to the newsletter and accept with the User agreement</label> -->
-
+                        <div class="form-field">
+                            <input type="text" class="contact-form-input" name="user-name" id="name" placeholder="Name" required>
+                            <label for="name" class="form-label">Name</label>
+                        </div>
+                        <div class="form-field">
+                            <input type="tel" class="contact-form-input" name="user-phone" placeholder="Phone" required>
+                            <label for=""></label>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" class="contact-form-input" name="user-email" placeholder="Email" required>
+                            <label for=""></label>
+                        </div>
+                        <div class="form-field">
+                            <textarea class="user-comment" name="user-comment" placeholder="Comment" required></textarea>
+                        </div>
+                        <div class="form-field">
+                            <!-- <input type="checkbox" value="agree" name="Agree" id="Agree" class="contact-form-input">
+                                                    <label for="Agree">I agree to the newsletter and accept with the User agreement</label> -->
+                        </div>
                         <button type="submit" class="hero-button">Send</button> 
-                        <button data-modal-close>Close</button>
+                        <button class="close-bt" data-modal-close>
+                            <svg class="close-bt-svg">
+                                <use href="./images/sprite.svg#icon-close-form"></use>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
