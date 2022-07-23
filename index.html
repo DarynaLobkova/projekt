@@ -69,16 +69,21 @@
                         <div class="form-field">
                             <input type="email" class="contact-form-input" name="user-email" id="email" placeholder=" " required>
                             <label for="email" class="form-label">Email</label>
-                            <svg class="form-icon-svg person email">
+                            <svg class="form-icon-svg person">
                                 <use href="./images/sprite.svg#icon-email-form"></use>
                             </svg>
                         </div>
-                        <div class="form-field">
+                        <div class="form-field textarea">
                             <textarea class="user-comment" name="user-comment" placeholder="Comment" required></textarea>
                         </div>
                         <div class="form-field">
-                            <!-- <input type="checkbox" value="agree" name="Agree" id="Agree" class="contact-form-input">
-                                                    <label for="Agree">I agree to the newsletter and accept with the User agreement</label> -->
+                            <label class="checkbox-field">
+                                <input class="checkbox" type="checkbox" name="agreement" value="agreement">
+                                <span class="checkbox-icon"></span>
+                                <span class="description">I agree to the newsletter and accept
+                                    <a class="checkbox-link" href="http://">Terms of an agreement</a>
+                                </span>
+                            </label>
                         </div>
                         <button type="submit" class="hero-button">Send</button> 
                         <button class="close-bt" data-modal-close>
