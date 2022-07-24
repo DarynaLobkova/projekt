@@ -214,6 +214,7 @@ body{
 
 }
 
+/* Backdrop and modal window */
 .backdrop{
     position: fixed;
     top: 0;
@@ -252,6 +253,7 @@ body{
     }
     
 
+/* Contackt-form */
 
 .contact-form{
     width: 448px;
@@ -259,8 +261,6 @@ body{
     margin-right: auto;
 
 }
-
-
 
 .contact-form-title{
     display: block;
@@ -348,6 +348,10 @@ body{
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 2px;
+}
+.contact-form-input:focus,
+.user-comment:focus{
+    border: none;
 }
 
 .checkbox-icon{
@@ -701,6 +705,7 @@ body{
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .logo-accent-footer{
@@ -713,6 +718,7 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #FFFFFF;
 }
 
