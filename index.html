@@ -48,52 +48,6 @@
         <section class="hero">
             <h1 class="hero-title">Effective solutions<br>for your business</h1>
             <button data-modal-open class="hero-button button" type="button">Order service</button>
-            <div data-modal class="backdrop is-hidden">
-                <div class="modal">
-                    <b class="contact-form-title">Leave your details, we will call you back</b>
-                    <form class="contact-form">
-                        <div class="form-field">
-                            <input type="text" class="contact-form-input" name="user-name" id="name" placeholder=" " required>
-                            <label for="name" class="form-label">Name</label>
-                            <svg class="form-icon-svg person">
-                                <use href="./images/sprite.svg#icon-person-form"></use>
-                            </svg>
-                        </div>
-                        <div class="form-field">
-                            <input type="tel" class="contact-form-input" name="user-phone" id="phone" placeholder=" " required>
-                            <label for="phone" class="form-label">Phone</label>
-                            <svg class="form-icon-svg phone">
-                                <use href="./images/sprite.svg#icon-phone-form"></use>
-                            </svg>
-                        </div>
-                        <div class="form-field">
-                            <input type="email" class="contact-form-input" name="user-email" id="email" placeholder=" " required>
-                            <label for="email" class="form-label">Email</label>
-                            <svg class="form-icon-svg person">
-                                <use href="./images/sprite.svg#icon-email-form"></use>
-                            </svg>
-                        </div>
-                        <div class="form-field textarea">
-                            <textarea class="user-comment" name="user-comment" placeholder="Comment" required></textarea>
-                        </div>
-                        <div class="form-field">
-                            <label class="checkbox-field">
-                                <input class="checkbox" type="checkbox" name="agreement" value="agreement">
-                                <span class="checkbox-icon"></span>
-                                <span class="description">I agree to the newsletter and accept
-                                    <a class="checkbox-link" href="http://">Terms of an agreement</a>
-                                </span>
-                            </label>
-                        </div>
-                        <button type="submit" class="hero-button">Send</button> 
-                        <button class="close-bt" data-modal-close>
-                            <svg class="close-bt-svg">
-                                <use href="./images/sprite.svg#icon-close-form"></use>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
         </section>
         <!-- Our nations-->
         <section class="our-nations section">
@@ -411,6 +365,52 @@
             </div>
            </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <b class="contact-form-title">Leave your details, we will call you back</b>
+            <form class="contact-form">
+                <div class="form-field">
+                    <input type="text" class="contact-form-input" name="user-name" id="name" placeholder=" " required>
+                    <label for="name" class="form-label">Name</label>
+                    <svg class="form-icon-svg person">
+                        <use href="./images/sprite.svg#icon-person-form"></use>
+                    </svg>
+                </div>
+                <div class="form-field">
+                    <input type="tel" class="contact-form-input" name="user-phone" id="phone" placeholder=" " required>
+                    <label for="phone" class="form-label">Phone</label>
+                    <svg class="form-icon-svg phone">
+                        <use href="./images/sprite.svg#icon-phone-form"></use>
+                    </svg>
+                </div>
+                <div class="form-field">
+                    <input type="email" class="contact-form-input" name="user-email" id="email" placeholder=" " required>
+                    <label for="email" class="form-label">Email</label>
+                    <svg class="form-icon-svg person">
+                        <use href="./images/sprite.svg#icon-email-form"></use>
+                    </svg>
+                </div>
+                <div class="form-field textarea">
+                    <textarea class="user-comment" name="user-comment" placeholder="Comment" required></textarea>
+                </div>
+                <div class="form-field">
+                    <label class="checkbox-field">
+                        <input class="checkbox" type="checkbox" name="policy" value="accept policy">
+                        <span class="checkbox-icon"></span>
+                        <span class="description">I agree to the newsletter and accept
+                            <a class="checkbox-link" href="http://">Terms of an agreement</a>
+                        </span>
+                    </label>
+                </div>
+                <button type="submit" class="hero-button">Send</button>
+                <button class="close-bt" data-modal-close>
+                    <svg class="close-bt-svg">
+                        <use href="./images/sprite.svg#icon-close-form"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
 
     <script src="./js/modal.js"></script>
 </body>
