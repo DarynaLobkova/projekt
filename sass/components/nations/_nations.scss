@@ -1,0 +1,45 @@
+.our-nations-subtitle {
+    font-weight: 700;
+    line-height: 1.14;
+    margin-bottom: 10px;
+
+}
+
+.description {
+    line-height: 1.71;
+    color: $secondary-text-color;
+
+    margin-bottom: 0;
+}
+.our-nations-subtitle,
+.description{
+    font-size: 14px;
+    letter-spacing: 0.03em;
+     margin-top: 0;
+
+}
+
+.our-nations-list {
+    display: flex;
+}
+
+.our-nations-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.our-nation-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+ 
+&-svg{
+    width: 70px;
+    height: 70px;
+    }
+}    
+
+   

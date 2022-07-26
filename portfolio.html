@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
@@ -20,17 +20,17 @@
                     </span>Studio</a>
                 <ul class="navigation-list list">
                     <li class="navigation-item">
-                        <a class="navigation-link link" href="./index.html">Studio</a>
+                        <a class="navigation-link studio-link link" href="./index.html">Studio</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link portfolio-link link" href="./portfolio.html">Portfolio</a>
+                        <a class="navigation-link link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link link" href="./index.html">Contacts</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="contact-list list">
+            <ul class="contact list">
                 <li class="contact-item">
                     <a class="contact-mail-link link" href="mailto:info@example.com">
                         <svg class="contact-icon-svg icon-mail">
@@ -46,6 +46,7 @@
             </ul>
         </div>
     </header>
+ 
     <main>
        <section class="section">
         <div class="container">
@@ -185,6 +186,72 @@
         </div>
        </section>
     </main>
+    <footer class="footer-page">
+        <div class="container">
+            <div class="footer-addres">
+                <a class="footer-logo link" href="./index.html" aria-label="Логотип"><span class="logo-name-part">Web
+                    </span><span class="logo-accent-footer">Studio</span></a>
+                <address class="addres">
+                    <ul class="addres-list list">
+                        <li class="addres-item">
+                            <a class="addres-link link" href="https://goo.gl/maps/9onHGGkWkiFExUmm9" target="_blank">Kyiv,
+                                Lesia Ukrainka Ave, 26</a>
+                        </li>
+                        <li class="addres-item">
+                            <a class="contact-mail-link-footer link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="addres-item">
+                            <a class="contact-tel-link-footer link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-join">
+                <b class="join">Join</b>
+                <ul class="social-icon list">
+                    <li class="social-icon-item footer-social-icon">
+                        <a class="social-icon-link social-link-footer link" href="" aria-label="Instagram">
+                            <svg class="social-icon-svg social-icon-svg-footer">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-item footer-social-icon">
+                        <a class="social-icon-link social-link-footer link" href="" aria-label="Twitter">
+                            <svg class="social-icon-svg social-icon-svg-footer">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-item footer-social-icon">
+                        <a class="social-icon-link social-link-footer link" href="" aria-label="Facebook">
+                            <svg class="social-icon-svg social-icon-svg-footer">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-item footer-social-icon">
+                        <a class="social-icon-link social-link-footer link" href="" aria-label="Linkedin">
+                            <svg class="social-icon-svg social-icon-svg-footer">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-right-part">
+                <p class="text-footer">Subscribe to newsletter</p>
+                <form>
+                    <input type="email" class="contact-form-input-footer" name="user-email" placeholder="E-mail" required>
+                    <button type="submit" class="button-sb">Subscribe
+                        <svg class="icon-send" width="24px" height="24px">
+                            <use href="./images/sprite.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

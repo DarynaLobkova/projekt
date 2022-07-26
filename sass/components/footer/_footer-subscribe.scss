@@ -1,0 +1,54 @@
+.text-footer {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $tertiary-text-color;
+}
+.contact-form-input-footer {
+    width: 358px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    margin-right: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+    background-color: #2F303A;
+}
+
+.contact-form-input-footer:focus {
+    outline: none;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
+.button-sb {
+    display: inline-flex;
+    align-items: center;
+    width: 200px;
+    padding-top: 10px;
+    padding-left: 29px;
+    padding-bottom: 10px;
+
+    background-color: $accent-color;
+    color: $tertiary-text-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.icon-send {
+    margin-left: 10px;
+}
