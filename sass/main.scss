@@ -1,16 +1,16 @@
 @import "./utils/variables";
 @import "./base/base";
-@import "./components/header/header";
-@import "./components/hero/hero";
-@import "./components/nations/nations";
-@import "./components/what_we_do/what-we-do";
-@import "./components/team/team";
-@import "./components/clients/clients";
-@import "./components/footer/footer-adress";
-@import "./components/footer/footer-social-links";
-@import "./components/footer/footer-subscribe";
-@import "./components/portfolio/portfolio";
-@import "./components/contact-form/contact-form"
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/nations";
+@import "./layout/what-we-do";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio/portfolio";
+@import "./components/contact-form";
+
+
 
 
 
