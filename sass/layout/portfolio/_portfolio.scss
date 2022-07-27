@@ -54,7 +54,7 @@
 
 .our-works-title {
     margin-top: 0;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -86,6 +86,15 @@
 
 }
 
+.description {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    line-height: 1.71;
+    color: $secondary-text-color;
+
+    margin-bottom: 0;
+}
 
 
 .our-works-link {
