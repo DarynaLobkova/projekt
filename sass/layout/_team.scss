@@ -55,11 +55,8 @@
 
 .social-icon-link {
     @extend %align-center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+    @extend %social-icon;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover{
     background-color: $accent-color;
 }
@@ -72,7 +69,6 @@
 }
 
 .social-icon-svg {
-    width: 20px;
-    height: 20px;
+    @extend %icon-svg;
     fill: $primary-icon-fill;
 }
