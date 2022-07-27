@@ -2,6 +2,7 @@
     font-weight: 700;
     line-height: 1.14;
     margin-bottom: 10px;
+    color: $primary-text-color ;
 
 }
 
@@ -28,9 +29,7 @@
 }
 
 .our-nation-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align-center;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
