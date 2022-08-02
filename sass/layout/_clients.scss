@@ -1,21 +1,31 @@
 .clients-list {
-    @media screen and (min-width:1200px){
         display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
     }
    
-}
 
 .clients-item {
-    display: flex;
+    @media screen and (max-width:767px) {
+        margin: 15px;
+        flex-basis: calc((100% - 60px) / 2);
+        }
+    @media screen and (min-width:768px) {
+        margin: 15px;
+        flex-basis: calc((100% - 90px) / 3);
+         }
+    @media screen and (min-width:1200px) {
+        margin: 15px;
+        flex-basis: calc((100% - 180px) / 6);
+         }
+
+
 }
 
-.clients-item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .clients-link {
     @extend %align-center;
-    width: 170px;
     height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;

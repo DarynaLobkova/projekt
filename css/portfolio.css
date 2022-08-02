@@ -299,6 +299,25 @@ body {
   fill: #2196F3;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo-name-part {
+  color: #2196f3;
+}
+
 .header {
   position: relative;
   border-bottom: 1px solid #ECECEC;
@@ -397,7 +416,6 @@ body {
 }
 
 .filtr-button {
-  width: 130px;
   height: 38px;
   font-weight: 500;
   font-size: 16px;
