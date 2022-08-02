@@ -4,10 +4,44 @@
     
 }
 
+.menu-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
 
+.menu-button .icon-cross {
+    display: none;
+}
 
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+&.is-open {
+    display: block;
+}    
+}
 
 .main-nav {
+    display: flex;
+    justify-content: space-between;
     padding-top:15px;
     padding-bottom:15px;
  
