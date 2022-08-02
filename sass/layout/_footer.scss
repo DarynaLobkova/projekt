@@ -133,7 +133,7 @@
 }
 
 .contact-form-input-footer {
-    max-width: 450px;
+    width: 358px;
     height: 50px;
     padding-top: 16px;
     padding-left: 16px;
@@ -148,7 +148,6 @@
     background-color: #2F303A;
 
     @media screen and (min-width:1200px){
-        max-width: 358px;
         margin-right: 12px;
         
     }
