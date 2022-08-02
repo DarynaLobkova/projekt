@@ -1,30 +1,24 @@
 .header {
+    position: relative;
     border-bottom: 1px solid #ECECEC;
+    
 }
 
-.logo {
-    font-family: $secondary-font-family;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #000000;
-}
 
-.logo-name-part {
-    color: $accent-color;
-}
+
 
 .main-nav {
-    @extend %align-center;
+    padding-top:15px;
+    padding-bottom:15px;
+ 
 }
 
 .navigation {
-    @extend %align-center;
+    margin-bottom: 10px;
+   
 
 &-list {
-        display: flex;
-        margin-left: 85px;
+  margin-bottom: 10px;
     }
 
 &-link{
@@ -32,18 +26,19 @@
 }  
 }
 
-.contact {
-   @extend %align-center;
-    margin-left: auto;  
 
- &-tel-link,
- &-mail-link{
+.contact {
+  margin-bottom: 10px;
+
+
+&-tel-link,
+&-mail-link{
     color: $secondary-text-color;
-    @extend %align-center;
   
- }   
- 
-}
+ }  
+} 
+
+
 
 .navigation-item:not(:last-child),
 .contact-item:not(:last-child) {
@@ -72,10 +67,7 @@
 .navigation-link,
 .contact-mail-link,
 .contact-tel-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    margin-bottom:20px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -84,11 +76,14 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    
+
 &:hover,
 &:focus{
     color: $accent-color;
-}    
-}
+}  
+}  
+
 
 
 .contact-icon-svg {

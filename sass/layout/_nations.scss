@@ -21,19 +21,35 @@
 }
 
 .our-nations-list {
-    display: flex;
+    @media screen and (min-width:768px){
+        display: flex;
+        
+    }
 }
 
 .our-nations-item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width:767px) {
+         margin-bottom: 30px;
+        }
+        
+    @media screen and (min-width:1200px){
+        margin-right: 30px;  
+    }
+    
 }
 
 .our-nation-icon {
     @extend %align-center;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: #F5F4FA;
     margin-bottom: 30px;
+    @media screen and (min-width:768px) {
+        width: 354px; 
+    }
+    @media screen and (min-width:1200px) {
+      width: 270px;
+    }
  
 &-svg{
     width: 70px;
