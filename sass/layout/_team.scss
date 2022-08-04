@@ -78,14 +78,16 @@
     @extend %align-center;
     @extend %social-icon;
 
-&:hover{
+&:hover,
+&:focus{
     background-color: $accent-color;
 }
 }
 
 
 
-.social-icon-link:hover .social-icon-svg {
+.social-icon-link:hover .social-icon-svg,
+.social-icon-link:focus .social-icon-svg{
     fill: #FFFFFF;
 }
 
