@@ -1,4 +1,27 @@
+.filtr-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.filtr-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filtr-item:not(:nth-last-child(-n + 2)) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
+}
 .filtr-button {
     @extend %alight-items;
     min-width: 73px;
