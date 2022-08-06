@@ -1,28 +1,7 @@
 
-.filtr-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -8px;
-    margin-bottom: 50px;
-}
-
-.filtr-item {
-    @media screen and (max-width:767px){
-        margin: 8px;
-        flex-basis: calc((100% - 48px)/3) ;
-        
-    }
-}
-
-
-
-
-.filtr-item:not(:last-child) {
-    margin-right: 8px;
-}
-
 .filtr-button {
-    height: 38px;
+    @extend %alight-items;
+    min-width: 73px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.39;
