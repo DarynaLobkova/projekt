@@ -29,7 +29,7 @@ body.modal-open {
     margin: 0;
     list-style-type: none;
 }
- .container {
+.container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -90,4 +90,10 @@ body.modal-open {
 
     }
 
+}
+.description{
+    line-height: 1.71;
+    color: $secondary-text-color;
+    letter-spacing: 0.03em;
+    margin-top: 0;
 }
