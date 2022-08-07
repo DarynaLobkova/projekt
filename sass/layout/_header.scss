@@ -74,6 +74,8 @@
 
   @media screen and (min-width: 1200px){
     display: flex;
+    align-items: center;
+
   }
 
 &-item:not(:last-child) {
@@ -96,10 +98,14 @@
 &-tel-link,
 &-mail-link{
     color: $secondary-text-color;
+    @media screen and (min-width:1200px){
+        padding-top: 32px;
+        padding-bottom: 32px;
+        
+    }
   
  }  
 } 
-
 
 
 
@@ -122,6 +128,7 @@
     line-height: 1.14;
     
    }
+   
     
 
 &:hover,

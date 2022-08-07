@@ -28,12 +28,13 @@
     min-width: 73px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.39;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
     border: none;
     background-color: #F5F4FA;
     padding: 6px 22px;
+    border-radius: 4px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -42,7 +43,7 @@
         color: $tertiary-text-color ;
         background-color: $accent-color ;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
+        
     }
 }
 
@@ -57,53 +58,54 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: $primary-text-color ;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 294px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
 }
 
 .our-works-list {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 
 }
 
-.our-works-item {
-&:not(:last-child)  {
-    @media screen and(max-width:767px) {
-        margin-bottom: 30px;
+
+ @media screen and(max-width:767px) {
+.our-works-item:not(:last-child) {
+    margin-bottom: 30px;
+
+}       
+ }
+  @media screen and(min-width:768px) {
+    .our-works-item {
+        margin: 15px;
+        flex-basis: calc((100% - 60px) / 2);
     }
 
-}  
+  }
+
+  @media screen and (min-width:1200px){
+    .our-works-item{
+        flex-basis: calc((100% - 90px) / 3);
+    }
     
-    @media screen and (min-width:1200px) {
-        width: 370px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-     }
-               
-&:nth-child(3n) {
-    @media screen and (min-width:1200px) {
-        margin-right: 0;
-    }
-        
   }
-        
-&:nth-last-child(-n+3) {
-    @media screen and (min-width:1200px) {
-     margin-bottom: 0;
-     }
-        
-  }
-        
-        
-&:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-}
-
 
 
 .our-works-link {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 
