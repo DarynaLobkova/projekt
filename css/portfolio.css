@@ -708,16 +708,29 @@ body.modal-open {
 }
 
 .footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2F303A;
 }
 .footer-page .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .footer-page .container {
     display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-left-part {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-left-part {
+    display: flex;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
